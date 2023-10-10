@@ -16,9 +16,10 @@ function Logi1() {
     }
     return (
     <>
-    <NavBar/>
-   <Cate/>
-   <Menu/>
+
+<Menu/>
+
+
    <div className='container' style={{borderRadius:"15px",width:"26rem",backgroundColor:"#edd4f8",boxShadow:"8px 10px 20px black",position:"absolute",top:"18%",left:"35%"}}>
  
 
@@ -85,7 +86,7 @@ function Logi1() {
       </form>
     
    </div>
-<Footer/>
+
    </>
   )
 }

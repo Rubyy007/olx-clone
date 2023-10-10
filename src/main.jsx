@@ -7,7 +7,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Loadmore from './loadmore.jsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,11 +16,8 @@ const router = createBrowserRouter([
   {
     path:"/login",
     element: <Logi1/>,
-  },
-  {
-    path:"/load",
-    element: <Loadmore/>,
-  },
+  }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

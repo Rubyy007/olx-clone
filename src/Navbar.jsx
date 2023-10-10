@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
     
-function NavBar() {
+function NavBar({setData}) {
 
   return (
 
@@ -25,7 +25,7 @@ function NavBar() {
       </select>
     
              
-                <input  type='text' placeholder='search cars,phones here' style={{width:"700px",height:"45px",borderColor:"rgb(1, 65, 22)",borderRadius:"4px 0px 0px 4px "}}></input><button className="fa fa-search" style={{background:" rgb(1, 65, 22)",width:"40px",display:"flex",justifyContent:"center",border:"none",alignItems:"center"}} onClick={()=>{alert("Item Not Found!")}}></button>
+                <input  type='text' placeholder='search cars,phones here' style={{width:"700px",height:"45px",borderColor:"rgb(1, 65, 22)",borderRadius:"4px 0px 0px 4px "}} onChange={(e)=>setData(e.target.value)}></input><button className="fa fa-search" style={{background:" rgb(1, 65, 22)",width:"40px",display:"flex",justifyContent:"center",border:"none",alignItems:"center"}} onClick={()=>{alert("Item Not Found!")}}></button>
     
                 
         <select className='mx-3' name="selectedLang" style={{width:"90px",border:"none"}} >
